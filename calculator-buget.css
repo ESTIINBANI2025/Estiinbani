@@ -1,0 +1,172 @@
+/* Adăugăm un margin-top mai mare doar pe mobil pentru secțiunea calculator-buget */
+@media(max-width:967px) {
+    .logo-container img {
+        width: 100%;
+    }
+}
+
+@media(max-width:992px) {
+    .logo-box {
+        margin-bottom: 10rem;
+    }
+    .nav-links ul {
+        gap: 0;
+    }
+}
+
+@media(max-width: 1200px) {
+    #calculator-buget h2 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 576px) {
+    .logo-container img {
+        width: 100%!important;
+    }
+
+    #calculator-buget h2 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #calculator-buget {
+        margin-top: 200px; /* Ajustează valoarea după cum vrei */
+    }
+  
+    .logo-container img {
+        width: 75%;
+        margin-top: 8rem;
+    }
+}
+.product-content input {
+    width: 100%; /* Ocupă toată lățimea containerului pe mobil */
+    max-width: 400px; /* Pe desktop nu va fi prea lat */
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #000000; /* Border mai subțire și estetic */
+    border-radius: 8px; /* Colțuri mai rotunjite pentru un aspect modern */
+    background: white;
+    color: black;
+    font-size: 16px;
+    caret-color: #000000;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-content input:focus {
+    border-color: #007BFF; /* Evidențiere la focus */
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Optimizare pentru mobil */
+@media (max-width: 600px) {
+    .product-content input {
+        width: 90%; /* Se adaptează mai bine la ecrane mici */
+        font-size: 14px; /* Ușor mai mic pentru a încăpea mai bine */
+        padding: 12px;
+    }
+}
+/* Secțiunea pentru verificarea unui produs */
+#product-check {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #006d77;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stil pentru titlu */
+#product-check h3 {
+    font-size: 22px;
+    color: #006d77;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Stil pentru input */
+#product-price {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #006d77;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#product-price:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Stil pentru buton */
+#product-check button {
+    background-color: #000;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 300px;
+}
+
+#product-check button:hover {
+    background-color: #83c5be;
+    transform: scale(1.05);
+}
+
+#product-check button:active {
+    background-color: #83c5be;
+}
+
+/* Rezultatul afișat */
+#product-result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsivitate pentru mobil */
+@media (max-width: 600px) {
+    #product-check {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #product-price, #product-check button {
+        width: 100%;
+    }
+}
+.logo-container {
+    margin-bottom: 50px; /* Adaugă spațiu sub logo */
+}
+
+#calculator-buget {
+    margin-top: 50px; /* Adaugă spațiu deasupra secțiunii */
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        margin-bottom: 30px;
+    }
+
+    #calculator-buget {
+        margin-top: 150px;
+    }
+}

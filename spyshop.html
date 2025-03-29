@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principală</title>
+    <link rel="stylesheet" href="regata.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="suntinbani.png" alt="Logo">
+        </div>
+        <button class="hamburger-menu" onclick="toggleNavMenu()">☰</button>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator-buget.html">Calculator de Buget</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="search-bar" 
+                placeholder="Sunt in bani cu magazinul..." 
+                onkeydown="handleSearchRedirect(event)">
+        </div>
+    </div>
+</header>
+<div class="center-text-half">
+    <p>După ce dați click pe voucherul dorit revenit pe pagina: "Sunt in bani" pentru a-l revendica!</p>
+</div>
+<div class="titlu-vouchere">
+    <h1>Voucherele tale</h1>
+</div>
+
+        
+        <div class="voucher-buttons">
+            <!-- Butoane pentru vouchere -->
+            <div class="voucher-buttons">
+                <a href="#" class="voucher-btn">
+                    Voucher 1
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 2
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 3
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 4
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 5
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 6
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 7
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 8
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 9
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 10
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 11
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                <a href="#" class="voucher-btn">
+                    Voucher 12
+                    <img src="logo-regata.png" alt="Logo Regata" class="voucher-logo">
+                </a>
+                
+            </div>
+            
+        </div>
+    
+ <!-- Pop-up pentru codul voucherului -->
+ <div id="voucher-popup" class="popup">
+    <div class="popup-content">
+        <span id="popup-close" class="popup-close">&times;</span>
+        <p>Codul voucherului este: <span id="voucher-code"></span></p>
+    </div>
+</div>
+        <!-- Container pentru afișarea codului de voucher -->
+        <div id="voucher-code-container" style="display: none; margin-top: 20px;">
+            <p>Codul voucherului tău este:</p>
+            <div id="voucher-code" style="font-size: 1.5em; font-weight: bold; color: #ff6600;"></div>
+        </div>
+    </section>
+    <section id="produse-premium">
+        <h2>Produse Premium</h2>
+        
+        <div class="produse-container">
+            <!-- Produs Premium 1 -->
+            <div class="produs">
+                <img src="produs1.webp" alt="Produs Premium 1">
+                <h3>Produs Premium 1</h3>
+                <p>Reducere: <strong>10%</strong></p>
+                <a href="https://www.regata.ro/produs-premium1" class="produs-btn" target="_blank">Vezi Produs</a>
+            </div>
+    
+            <!-- Produs Premium 2 -->
+            <div class="produs">
+                <img src="produs2.webp" alt="Produs Premium 2">
+                <h3>Produs Premium 2</h3>
+                <p>Reducere: <strong>15%</strong></p>
+                <a href="https://www.regata.ro/produs-premium2" class="produs-btn" target="_blank">Vezi Produs</a>
+            </div>
+    
+            <!-- Produs Premium 3 -->
+            <div class="produs">
+                <img src="produs3.webp" alt="Produs Premium 3">
+                <h3>Produs Premium 3</h3>
+                <p>Reducere: <strong>20%</strong></p>
+                <a href="https://www.regata.ro/produs-premium3" class="produs-btn" target="_blank">Vezi Produs</a>
+            </div>
+    
+            <!-- Produs Premium 4 -->
+            <div class="produs">
+                <img src="produs4.webp" alt="Produs Premium 4">
+                <h3>Produs Premium 4</h3>
+                <p>Reducere: <strong>25%</strong></p>
+                <a href="https://www.regata.ro/produs-premium4" class="produs-btn" target="_blank">Vezi Produs</a>
+            </div>
+    
+            <!-- Produs Premium 5 -->
+            <div class="produs">
+                <img src="produs5.png" alt="Produs Premium 5">
+                <h3>Produs Premium 5</h3>
+                <p>Reducere: <strong>30%</strong></p>
+                <a href="https://www.regata.ro/produs-premium5" class="produs-btn" target="_blank">Vezi Produs</a>
+            </div>
+    
+            <!-- Produs Premium 6 -->
+            <div class="produs">
+                <img src="produs6.png" alt="Produs Premium 6">
+                <h3>Produs Premium 6</h3>
+                <p>Reducere: <strong>35%</strong></p>
+                <a href="https://www.regata.ro/produs-premium6" class="produs-btn" target="_blank">Vezi Produs</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+<section>   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Misiune -->
+            <div class="footer-section">
+                <h3>Beneficii</h3>
+                <p>Calculator de buget pentru economii eficiente.</p>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contactează-ne</h3>
+                <p>Email: <a href="mailto:contact@regata.ro">contact</a></p>
+                <p>Telefon: <a href="tel:+40123456789">+40 761 236 129
+
+                </a></p>
+            </div>
+    
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h3>Urmărește-ne și pe:</h3>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://tiktok.com" target="_blank">
+                    <img src="tiktok.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30">
+                </a>
+            </div>
+        </div>
+        <!-- Copyright și politica -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sunt în Bani? Toate drepturile rezervate.</p>
+            <p>Prin utilizarea site-ului nostru, sunteți de acord cu <a href="politica.html">Politica de Confidențialitate</a>.</p>
+            <br>
+                <a href="https://www.anpc.ro" target="_blank">
+                    <img src="anpc.png" alt="ANPC" class="footer-image">
+                </a>
+                <a href="URL_LITIGII_OBLIGATORII" target="_blank">
+                    <img src="anpc2.png" alt="Litigii Obligatorii" class="footer-image">
+                </a>
+        </div>
+    </footer>
+    </section>
+
+</html>
+

@@ -1,0 +1,306 @@
+/* Resetare stiluri */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1C1C1C, #3A6073, #00D2FF);
+    color: white;
+    padding: 5px 30px; /* Padding mai mic */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Înălțimea header-ului standard */
+}
+
+/* Conținutul header-ului */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.center-title h2 {
+    font-size: 2.5rem; /* Dimensiunea textului titlului */
+    font-weight: 700; /* Font gros */
+    text-transform: uppercase;
+    margin-left: 20px; /* Spațiu față de watermark */
+    position: relative;
+    z-index: 1; /* Asigurăm ca titlul să fie deasupra watermark-ului */
+}
+
+/* Meniu principal */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+/* Efect hover pe linkuri */
+.nav-links ul li a:hover {
+    background-color: #77767c;
+}
+/* Meniu hamburger */
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.hamburger-icon {
+    height: 5px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 10px; /* Colțuri rotunjite pentru o linie mai suavă */
+    transition: all 0.3s ease;
+}
+
+/* Efect de transformare pe hover */
+.menu-hamburger:hover .hamburger-icon {
+    background-color: #007BFF; /* Culoare schimbată la hover pentru mai mult contrast */
+}
+
+/* Meniu pe desktop */
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background: none;
+    width: auto;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+/* Ascunde meniul pe mobil */
+@media screen and (max-width: 768px) {
+    .menu-hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        background-color: #1C1C1C;
+        position: fixed; /* Schimbă poziția la fixed pentru a rămâne în poziția dorită */
+        top: 0; /* Poziționează meniul exact sub header, fără spațiu */
+        left: 0;
+        padding: 15px 0; /* Reducem padding-ul pentru un aspect compact */
+        z-index: 10;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: top 0.3s ease; /* Doar tranziția pentru top */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Umbra subtilă pentru un efect mai elegant */
+    }
+
+    /* Când meniul este activ, îl facem vizibil și fixat sub header */
+    .nav-links.active {
+        display: flex;
+        top: 60px; /* Meniul va fi fixat chiar sub header */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        padding: 12px 20px; /* Adăugăm puțin mai mult spațiu pe verticală pentru butoane mai mari */
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none; /* Eliminăm sublinierea */
+        transition: background-color 0.3s ease;
+        border-radius: 5px; /* Colțuri rotunjite pentru un aspect mai plăcut */
+    }
+
+    .nav-links ul li a:hover {
+        background-color: #007BFF; /* Schimbă culoarea fundalului la hover */
+        color: white; /* Asigurăm că textul rămâne alb */
+    }
+}
+/* Centrarea și delimitarea secțiunilor */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Spațiu mai generos pe margini */
+}
+/* Ajustări pentru mobil */
+@media screen and (max-width: 768px) {
+    main {
+        max-width: 90%; /* Restrângem conținutul pe mobil */
+        padding: 20px; /* Mai puțin spațiu lateral */
+    }
+
+    .about-us,
+    .features,
+    .call-to-action {
+        max-width: 80%; /* Facem secțiunile mai înguste pe mobil */
+        margin: 0 auto;
+    }
+}
+
+/* Delimitare clară între secțiuni */
+.intro-box, .about-us, .features, .call-to-action {
+    border-bottom: 3px solid #A9C4D1; /* Linia de delimitare mai subtilă */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-us {
+
+    margin-top: -20px;
+}
+/* Stilizarea secțiunii de introducere */
+.intro-box h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #00BFFF; /* Albastru vibrant */
+    letter-spacing: 2px; /* Spatiere între litere pentru efect de claritate */
+}
+
+.intro-box h1 span {
+    color: #3A6073; /* Culoare secundară pentru accent */
+}
+
+.intro-box p {
+    font-size: 1.3em;
+    color: #333333; /* Culoare mai profundă pentru un contrast mai mare */
+    line-height: 1.6; /* Spațiu între linii pentru o citire mai ușoară */
+}
+
+/* Secțiunea "Despre noi" */
+.about-us h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #3A6073; /* Culoare principală pentru titluri */
+    margin-bottom: 20px; /* Mai mult spațiu sub titlu */
+}
+
+.about-us p {
+    font-size: 1.1em;
+    color: #555555; /* Gri mai deschis pentru text */
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Secțiunea caracteristici */
+.features ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.features li {
+    font-size: 1.2em;
+    color: #333333; /* Gri închis pentru text */
+    margin-bottom: 20px; /* Mai mult spațiu între iteme */
+    position: relative;
+}
+
+.features li::before {
+    content: "✔"; /* Simbol de bifă pentru fiecare element */
+    color: #00BFFF;
+    position: absolute;
+    left: -30px;
+    font-size: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Stilizare pentru secțiunea "call-to-action" */
+.call-to-action {
+    background-color: transparent; /* Fundal transparent pentru efectul de box invizibil */
+    color: #333333; /* Text mai închis pentru contrast pe fundal transparent */
+    text-align: center; /* Centrează tot textul */
+    padding: 40px 20px;
+    border: 2px solid #4CAF50; /* Bordură verde pentru aspect de cutie */
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 600px; /* Lăsăm secțiunea mai mică */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.6; /* Mai mult spațiu între rânduri */
+}
+
+.call-to-action h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.call-to-action a {
+    display: inline-block;
+    background-color: #FF8C1A; /* Portocaliu pentru buton */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-to-action a:hover {
+    background-color: #E55A00; /* Culoare mai intensă la hover */
+    transform: scale(1.05);
+}
+
+.call-to-action a:active {
+    background-color: #D45100; /* Culoare mai închisă când butonul este apăsat */
+}

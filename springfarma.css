@@ -1,0 +1,306 @@
+
+/* Resetare stiluri pentru margini, padding și fonturi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale pentru pagină */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #0a3843;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #3a6073;
+    border-radius: 10px;
+}
+
+/* Centrul paginii */
+.center-text-half {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1c1c1c;
+    padding: 20px;
+}
+
+/* Titlul vouchere */
+.titlu-vouchere h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a3843;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Container pentru grilă cu vouchere */
+.voucher-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Coloane mai late */
+    grid-template-rows: auto;
+    gap: 20px; /* Spațiu mai mare între butoane */
+    margin: 30px auto; /* Centrare pe orizontală */
+    justify-items: center; /* Centrarea butoanelor pe orizontală */
+    align-items: center; /* Centrarea pe verticală */
+    max-width: 1200px; /* Lățime maximă pentru container */
+    width: 100%; /* Lățimea să ocupe tot spațiul disponibil */
+    padding: 20px; /* Spațiu interior pentru a nu fi prea aproape de margini */
+}
+
+/* Stil pentru fiecare voucher */
+.voucher-btn {
+    background-color: #f7f7f7; /* Alb foarte deschis */
+    color: #333; /* Textul într-o culoare mai închisă */
+    padding: 15px 40px; /* Mai mult padding pe orizontală pentru a le face mai late */
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Asigură că butoanele nu sunt prea mari */
+    max-width: 350px; /* Lățime maximă pentru fiecare buton, mai lat decât înainte */
+    text-align: center; /* Aliniază textul pe centru */
+}
+
+/* Stil pentru logo */
+.voucher-logo {
+    width: 110px; /* Dimensiune ajustată pentru logo */
+    height: auto;
+}
+
+/* Hover pentru butoane */
+.voucher-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Produse premium */
+.produse-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adăugăm spațiu între produse */
+    margin: 0 auto;  /* Centram containerul pe ecran */
+    margin-bottom: 50px;  /* Spațiu sub produsele premium */
+    padding: 0;  /* Eliminăm padding-ul lateral */
+    max-width: 1200px;  /* Lățimea maximă a containerului */
+    box-sizing: border-box; /* Asigurăm că padding-ul este inclus în dimensiunile elementelor */
+}
+
+.produs {
+    width: calc(50% - 20px);  /* Fiecare produs va ocupa 50% din lățimea ecranului, minus spațiul dintre ele */
+    padding: 20px;  /* Creștem padding-ul pentru mai mult spațiu */
+    background: linear-gradient(135deg, #1C1C1C, #3A6073); /* Fundal cu gradient */
+    border-radius: 15px;  /* Colțuri rotunjite */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Umbra subtire */
+    transition: transform 0.3s, box-shadow 0.3s;  /* Animație pe hover */
+    margin-bottom: 20px;  /* Adăugăm spațiu între rânduri */
+}
+
+.produs:hover {
+    transform: scale(1.05);  /* Efect de scalare la hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);  /* Umbra mai mare la hover */
+    background: linear-gradient(135deg, #3A6073, #00D2FF); /* Schimbăm gradientul la hover */
+}
+
+.produs img {
+    width: 450px;      /* Lățimea imaginii 250px */
+    height: 220px;     /* Înălțimea imaginii 250px */
+    border-radius: 10px;  /* Colțuri rotunjite la imagine */
+    margin-bottom: 15px;  /* Spațiu între imagine și titlu */
+    object-fit: cover;    /* Asigură că imaginea se potrivește fără a fi distorsionată */
+}
+
+.produs h3 {
+    font-size: 1.4em;
+    color: #00D2FF;  /* Culoare titlu albastru deschis */
+    margin-bottom: 10px;  /* Adăugat spațiu între titlu și descriere */
+}
+
+.produs a {
+    display: inline-block;
+    background-color: #3A6073;  /* Fundalul butonului */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;  /* Animație pe hover */
+}
+
+.produs a:hover {
+    background-color: #00D2FF;  /* Culoare la hover pe buton */
+    color: #1C1C1C;  /* Culoare text la hover pe buton */
+}
+
+/* Responsive pentru mobile */
+@media (max-width: 768px) {
+    .produs {
+        width: 100%;  /* Produsele vor ocupa întreaga lățime pe mobile */
+        margin-bottom: 20px;  /* Adăugăm spațiu între produse pe mobile */
+    }
+}
+
+
+
+
+/* Footer */
+footer {
+    background: #0a3843;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    color: #00d2ff;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #00d2ff;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #3a6073;
+}
+
+/* Responsivitate pentru dispozitive mobile */
+@media (max-width: 768px) {
+    .voucher-btn {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+        min-width: 150px;
+        max-width: 220px;
+    }
+
+    .produse-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produs {
+        width: 90%;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+}
+/* Stiluri pentru pop-up */
+.popup {
+    display: none; /* Ascuns inițial */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semi-transparent */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #0a3843;
+    transition: color 0.3s ease;
+}
+
+.popup-close:hover {
+    color: #ff4d4d;
+}
+
+/* Animație pentru pop-up */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+

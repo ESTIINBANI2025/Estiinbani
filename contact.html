@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Economisește bani cu cele mai bune reduceri și oferte!">
+    <meta name="keywords" content="reduceri, economii, oferte, bani, buget">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ești în bani!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<header>
+    <div class="header-content">
+       
+        <div class="header-content">
+            <div class="menu-hamburger" onclick="toggleMenu()">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+            </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre.html">Despre</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="calculator-buget.html">Calculator de Buget</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="search-bar" 
+                placeholder="Caută ... " 
+                onkeydown="handleSearchRedirect(event)">
+        </div>
+    </div>
+</header>
+<div class="logo-container">      
+    <img src="suntinbani.png" alt="logo-poza" loading="lazy">
+</div>
+
+
+<main>
+    <section class="contact">
+        <h1>Contactează-ne</h1>
+        <p>Ne poți contacta folosind următoarele informații:</p>
+        
+        <address>
+            <h2>Informații de contact:</h2>
+            <p><strong>Adresă:</strong> Brnănești Dâmbovița, Str. Bran Stegaru Nr 9 </p>
+            <p><strong>Telefon:</strong> 0761 231 296</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@suntinbani.ro">estiinbani@mail.com</a></p>
+            <p><strong>Orar de lucru:</strong> Luni-Vineri: 8:00 - 17:00</p>
+        </address>
+
+        <p>Ne poți contacta și prin rețelele noastre sociale:</p>
+        <ul>
+            <li><a href="https://facebook.com/suntinbani" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/suntinbani" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com/company/suntinbani" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+</main>
+<section>   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Misiune -->
+            <div class="footer-section">
+                <h3>Misiunea noastră</h3>
+                <p>Aici va fi textul reformulat pentru misiune...</p>
+            </div>
+    
+            <!-- Contact -->
+            <div class="footer-section">
+                <h3>Contactează-ne</h3>
+                <p>Email: <a href="mailto:contact@regata.ro">contact@regata.ro</a></p>
+                <p>Telefon: <a href="tel:+40123456789">+40 123 456 789</a></p>
+            </div>
+    
+            <!-- Social Links -->
+            <div class="footer-section">
+                <h3>Urmărește-ne</h3>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="facebook.png" alt="Facebook" width="30" height="30">
+                </a>
+                <a href="https://tiktok.com" target="_blank">
+                    <img src="tiktok.png" alt="Twitter" width="30" height="30">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="instagram.png" alt="Instagram" width="30" height="30">
+                </a>
+            </div>
+        </div>
+        <!-- Copyright și politica -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sunt în Bani? Toate drepturile rezervate.</p>
+            <p>Prin utilizarea site-ului nostru, sunteți de acord cu <a href="politica.html">Politica de Confidențialitate</a>.</p>
+            <br>
+                <a href="https://www.anpc.ro" target="_blank">
+                    <img src="anpc.png" alt="ANPC" class="footer-image">
+                </a>
+                <a href="URL_LITIGII_OBLIGATORII" target="_blank">
+                    <img src="anpc2.png" alt="Litigii Obligatorii" class="footer-image">
+                </a>
+        </div>
+    </footer>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
